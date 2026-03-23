@@ -1,0 +1,7 @@
+# Fallback owner for all files
+*       @h18n
+
+# Specific service owners (can be expanded as the team grows)
+/ui/     @h18n
+/infra/  @h18n
+/docs/   @h18n

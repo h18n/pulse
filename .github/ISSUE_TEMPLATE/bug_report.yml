@@ -1,0 +1,55 @@
+name: "\U0001F41B Bug Report"
+description: Create a report to help us improve.
+title: "[Bug] "
+labels: ["bug"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! 
+        Please provide as much detail as possible so we can reproduce it locally.
+  - type: input
+    id: version
+    attributes:
+      label: Pulse Version
+      description: What version of Pulse are you running? (e.g., v1.0.0 or commit hash)
+      placeholder: v1.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: Where are you running Pulse?
+      options:
+        - Local (Docker Compose)
+        - Kubernetes (production)
+        - Bare Metal
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: How can we trigger this bug?
+      placeholder: |
+        1. Click on the Trace Explorer
+        2. Enter 'checkout-service'
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error Logs or Screenshots
+      description: Paste any relevant terminal logs, browser console errors, or screenshots.
+      render: shell

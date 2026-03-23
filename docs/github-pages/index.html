@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse — AI-Powered Observability Platform</title>
+    <meta name="description"
+        content="Pulse is a next-generation, AI-powered observability platform that unifies metrics, logs, traces, and incidents into a single pane of glass.">
+    <meta property="og:title" content="Pulse — AI-Powered Observability Platform">
+    <meta property="og:description"
+        content="Unify metrics, logs, traces, and incidents. Reduce MTTR by 75% with AI-powered root cause analysis.">
+    <meta property="og:image" content="assets/screenshot-dashboard.png">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/logo.png" alt="Pulse" class="nav-logo-img">
+                <span>Pulse</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#screenshots">Screenshots</a>
+                <a href="#architecture">Architecture</a>
+                <a href="https://github.com/sponsors/h18n" class="nav-cta sponsor-cta"
+                    style="background: linear-gradient(135deg, #ec4899, #f43f5e); border: none; color: white; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 15px rgba(236, 72, 153, 0.4);"
+                    target="_blank" rel="noopener">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                    </svg>
+                    Sponsor
+                </a>
+                <a href="https://github.com/h18n/pulse" class="nav-cta" target="_blank" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Open Source
+            </div>
+            <h1 class="hero-title">
+                AI-Powered<br>
+                <span class="gradient-text">Observability</span><br>
+                Platform
+            </h1>
+            <p class="hero-subtitle">
+                Unify metrics, logs, traces, and incidents into a single pane of glass.
+                Reduce MTTR by 75% with AI-powered root cause analysis and an intelligent copilot.
+            </p>
+            <div class="hero-actions">
+                <a href="https://github.com/h18n/pulse" class="btn btn-primary" target="_blank" rel="noopener">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    View on GitHub
+                </a>
+                <a href="https://github.com/h18n/pulse/blob/main/docs/GETTING_STARTED.md" class="btn btn-secondary"
+                    target="_blank" rel="noopener">
+                    Get Started →
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">4</span>
+                    <span class="stat-label">Microservices</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">12+</span>
+                    <span class="stat-label">Visualizations</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">AI</span>
+                    <span class="stat-label">Powered by Gemini</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="browser-frame">
+                <div class="browser-header">
+                    <div class="browser-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="browser-address">localhost:3000/dashboards</div>
+                </div>
+                <img src="assets/screenshot-dashboard.png" alt="Pulse Dashboard" class="browser-content">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2>Everything you need for<br><span class="gradient-text">modern observability</span></h2>
+                <p>Built for DevOps, SRE, and Platform Engineering teams who are tired of tool sprawl.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card feature-large">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #7c3aed, #a855f7);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3>AI Copilot</h3>
+                    <p>Ask questions in natural language. "Show me errors in checkout service" — and get instant answers
+                        backed by your real data.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #0ea5e9, #06b6d4);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <path d="M3 9h18M9 21V9" />
+                        </svg>
+                    </div>
+                    <h3>Unified Dashboards</h3>
+                    <p>Grafana-style drag-and-drop dashboards with 12+ widget types, real-time refresh, and template
+                        variables.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #f59e0b, #f97316);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                            <line x1="12" y1="9" x2="12" y2="13" />
+                            <line x1="12" y1="17" x2="12.01" y2="17" />
+                        </svg>
+                    </div>
+                    <h3>Smart Alerting</h3>
+                    <p>Correlation rules engine detects complex patterns — brute force, lateral movement, cascading
+                        failures.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #10b981, #34d399);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                        </svg>
+                    </div>
+                    <h3>Automated RCA</h3>
+                    <p>AI-powered root cause analysis runs automatically on critical alerts, correlating metrics, logs,
+                        and related events.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #ec4899, #f43f5e);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
+                        </svg>
+                    </div>
+                    <h3>Service Map</h3>
+                    <p>Auto-discovered interactive service topology. Visualize dependencies and identify bottlenecks at
+                        a glance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #6366f1, #818cf8);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
+                        </svg>
+                    </div>
+                    <h3>Runbook Automation</h3>
+                    <p>Pre-built runbooks for host isolation, credential reset, health checks — with step-by-step
+                        execution and audit trail.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots" id="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Screenshots</span>
+                <h2>See Pulse <span class="gradient-text">in action</span></h2>
+                <p>A beautiful, responsive interface designed for efficiency.</p>
+            </div>
+            <div class="screenshot-tabs">
+                <button class="tab active" data-tab="dashboard">Dashboards</button>
+                <button class="tab" data-tab="alerts">Alerts</button>
+                <button class="tab" data-tab="copilot">AI Copilot</button>
+                <button class="tab" data-tab="logs">Logs Explorer</button>
+                <button class="tab" data-tab="service-map">Service Map</button>
+            </div>
+            <div class="screenshot-viewer">
+                <div class="browser-frame large">
+                    <div class="browser-header">
+                        <div class="browser-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="browser-address" id="tab-address">localhost:3000/dashboards</div>
+                    </div>
+                    <img id="screenshot-img" src="assets/screenshot-dashboard.png" alt="Pulse Screenshot"
+                        class="browser-content">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section class="architecture" id="architecture">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Architecture</span>
+                <h2>Built with a <span class="gradient-text">modern stack</span></h2>
+                <p>A microservices architecture powered by proven open-source technologies.</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-label">Frontend</div>
+                    <div class="tech-items">
+                        <span class="tech-chip">Next.js 15</span>
+                        <span class="tech-chip">React 19</span>
+                        <span class="tech-chip">TypeScript</span>
+                        <span class="tech-chip">Tailwind CSS</span>
+                        <span class="tech-chip">Zustand</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-label">Backend</div>
+                    <div class="tech-items">
+                        <span class="tech-chip">Fastify</span>
+                        <span class="tech-chip">TypeScript</span>
+                        <span class="tech-chip">Slack Bolt</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-label">AI / ML</div>
+                    <div class="tech-items">
+                        <span class="tech-chip">Google Gemini 2.0</span>
+                        <span class="tech-chip">Anomaly Detection</span>
+                        <span class="tech-chip">Forecasting</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-label">Infrastructure</div>
+                    <div class="tech-items">
+                        <span class="tech-chip">Prometheus</span>
+                        <span class="tech-chip">Elasticsearch</span>
+                        <span class="tech-chip">Telegraf</span>
+                        <span class="tech-chip">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to get started?</h2>
+                <p>Clone the repo, start Docker Compose, and have the full platform running in under 5 minutes.</p>
+                <div class="cta-code">
+                    <code>git clone https://github.com/h18n/pulse.git && cd pulse</code>
+                </div>
+                <div class="cta-actions">
+                    <a href="https://github.com/h18n/pulse" class="btn btn-primary" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                        Star on GitHub
+                    </a>
+                    <a href="https://github.com/h18n/pulse/blob/main/docs/GETTING_STARTED.md" class="btn btn-secondary"
+                        target="_blank" rel="noopener">
+                        Read the Docs →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo.png" alt="Pulse" class="footer-logo">
+                    <span>Pulse</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/sponsors/h18n" target="_blank" rel="noopener"
+                        style="color: #f43f5e; font-weight: 600;">Sponsor ❤️</a>
+                    <a href="https://github.com/h18n/pulse" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://github.com/h18n/pulse/blob/main/docs/GETTING_STARTED.md" target="_blank"
+                        rel="noopener">Docs</a>
+                    <a href="https://github.com/h18n/pulse/blob/main/CONTRIBUTING.md" target="_blank"
+                        rel="noopener">Contributing</a>
+                    <a href="https://github.com/h18n/pulse/issues" target="_blank" rel="noopener">Issues</a>
+                </div>
+                <p class="footer-copy">Apache 2.0 License · Made with ❤️ by the Pulse Contributors</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Screenshot tabs
+        const tabs = document.querySelectorAll('.tab');
+        const screenshotImg = document.getElementById('screenshot-img');
+        const tabAddress = document.getElementById('tab-address');
+
+        const tabData = {
+            dashboard: { img: 'assets/screenshot-dashboard.png', addr: 'localhost:3000/dashboards' },
+            alerts: { img: 'assets/screenshot-alerts.png', addr: 'localhost:3000/alerts' },
+            copilot: { img: 'assets/screenshot-copilot.png', addr: 'localhost:3000/copilot' },
+            logs: { img: 'assets/screenshot-logs.png', addr: 'localhost:3000/explore/logs' },
+            'service-map': { img: 'assets/screenshot-service-map.png', addr: 'localhost:3000/devices/service-map' },
+        };
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                const data = tabData[tab.dataset.tab];
+                screenshotImg.style.opacity = '0';
+                setTimeout(() => {
+                    screenshotImg.src = data.img;
+                    tabAddress.textContent = data.addr;
+                    screenshotImg.style.opacity = '1';
+                }, 200);
+            });
+        });
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.feature-card, .tech-card, .section-header').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+
+</html>

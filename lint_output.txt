@@ -1,0 +1,265 @@
+
+> ui@0.1.0 lint
+> eslint
+
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/e2e/explore.spec.ts
+  29:15  warning  'logEntries' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/app/(dashboard)/alerts/channels/page.tsx
+  10:5  warning  'MoreVertical' is defined but never used  @typescript-eslint/no-unused-vars
+  16:5  warning  'Settings' is defined but never used      @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/app/(dashboard)/alerts/page.tsx
+   7:5  warning  'BellOff' is defined but never used      @typescript-eslint/no-unused-vars
+  15:5  warning  'ChevronDown' is defined but never used  @typescript-eslint/no-unused-vars
+  18:5  warning  'Trash2' is defined but never used       @typescript-eslint/no-unused-vars
+  20:5  warning  'AlertCircle' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/app/(dashboard)/alerts/rules/page.tsx
+   6:5  warning  'Bell' is defined but never used          @typescript-eslint/no-unused-vars
+   7:5  warning  'CheckCircle2' is defined but never used  @typescript-eslint/no-unused-vars
+  10:5  warning  'MoreVertical' is defined but never used  @typescript-eslint/no-unused-vars
+  15:5  warning  'Trash2' is defined but never used        @typescript-eslint/no-unused-vars
+  19:5  warning  'Settings' is defined but never used      @typescript-eslint/no-unused-vars
+  20:5  warning  'ChevronRight' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/app/(dashboard)/copilot/page.tsx
+  17:5   warning  'RefreshCw' is defined but never used                  @typescript-eslint/no-unused-vars
+  18:5   warning  'ChevronRight' is defined but never used               @typescript-eslint/no-unused-vars
+  21:5   warning  'Trash2' is defined but never used                     @typescript-eslint/no-unused-vars
+  72:27  warning  'setConversations' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/app/(dashboard)/devices/page.tsx
+  14:5   warning  'Filter' is defined but never used              @typescript-eslint/no-unused-vars
+  19:5   warning  'Activity' is defined but never used            @typescript-eslint/no-unused-vars
+  21:5   warning  'Thermometer' is defined but never used         @typescript-eslint/no-unused-vars
+  22:5   warning  'Zap' is defined but never used                 @typescript-eslint/no-unused-vars
+  28:5   warning  'MoreVertical' is defined but never used        @typescript-eslint/no-unused-vars
+  75:12  warning  'isLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/app/(dashboard)/devices/service-map/page.tsx
+   8:5  warning  'Maximize2' is defined but never used     @typescript-eslint/no-unused-vars
+  10:5  warning  'Filter' is defined but never used        @typescript-eslint/no-unused-vars
+  11:5  warning  'Search' is defined but never used        @typescript-eslint/no-unused-vars
+  15:5  warning  'ChevronRight' is defined but never used  @typescript-eslint/no-unused-vars
+  18:5  warning  'TrendingUp' is defined but never used    @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/app/(dashboard)/devices/topology/page.tsx
+   11:8    warning  'Shell' is defined but never used                                @typescript-eslint/no-unused-vars
+   14:10   warning  'cn' is defined but never used                                   @typescript-eslint/no-unused-vars
+   17:28   warning  'setSelectedNodeId' is assigned a value but never used           @typescript-eslint/no-unused-vars
+  128:41   warning  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  128:158  warning  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/app/(dashboard)/explore/logs/page.tsx
+    3:36  warning  'useCallback' is defined but never used            @typescript-eslint/no-unused-vars
+    3:57  warning  'useEffect' is defined but never used              @typescript-eslint/no-unused-vars
+    7:5   warning  'Filter' is defined but never used                 @typescript-eslint/no-unused-vars
+    8:5   warning  'Clock' is defined but never used                  @typescript-eslint/no-unused-vars
+   16:5   warning  'X' is defined but never used                      @typescript-eslint/no-unused-vars
+   22:5   warning  'Maximize2' is defined but never used              @typescript-eslint/no-unused-vars
+  120:64  warning  'executeQuery' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/app/(dashboard)/explore/metrics/page.tsx
+   6:5   warning  'Search' is defined but never used                   @typescript-eslint/no-unused-vars
+   8:5   warning  'Clock' is defined but never used                    @typescript-eslint/no-unused-vars
+   9:5   warning  'ChevronDown' is defined but never used              @typescript-eslint/no-unused-vars
+  12:5   warning  'Settings' is defined but never used                 @typescript-eslint/no-unused-vars
+  15:5   warning  'StarOff' is defined but never used                  @typescript-eslint/no-unused-vars
+  16:5   warning  'Trash2' is defined but never used                   @typescript-eslint/no-unused-vars
+  17:5   warning  'Copy' is defined but never used                     @typescript-eslint/no-unused-vars
+  18:5   warning  'Check' is defined but never used                    @typescript-eslint/no-unused-vars
+  94:25  warning  'setIsExecuting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  96:44  warning  'isQueryLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/app/(dashboard)/incidents/page.tsx
+   5:5  warning  'AlertTriangle' is defined but never used  @typescript-eslint/no-unused-vars
+  10:5  warning  'Filter' is defined but never used         @typescript-eslint/no-unused-vars
+  13:5  warning  'Users' is defined but never used          @typescript-eslint/no-unused-vars
+  15:5  warning  'Link2' is defined but never used          @typescript-eslint/no-unused-vars
+  16:5  warning  'ExternalLink' is defined but never used   @typescript-eslint/no-unused-vars
+  17:5  warning  'MoreVertical' is defined but never used   @typescript-eslint/no-unused-vars
+  21:5  warning  'Calendar' is defined but never used       @typescript-eslint/no-unused-vars
+  23:5  warning  'Tag' is defined but never used            @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/app/api/dashboards/route.ts
+  160:27  warning  'req' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/app/api/devices/route.ts
+   6:27  warning  'req' is defined but never used    @typescript-eslint/no-unused-vars
+  40:14  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/components/CommandPalette.tsx
+  15:5   warning  'Settings' is defined but never used        @typescript-eslint/no-unused-vars
+  49:23  warning  'theme' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/components/alerts/CorrelationRulesManager.tsx
+   9:5  warning  'MoreHorizontal' is defined but never used                                                                 @typescript-eslint/no-unused-vars
+  18:5  warning  'ChevronRight' is defined but never used                                                                   @typescript-eslint/no-unused-vars
+  72:8  warning  React Hook useEffect has a missing dependency: 'engine'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/components/automation/RunbookManager.tsx
+  14:5  warning  'ChevronRight' is defined but never used                                                                   @typescript-eslint/no-unused-vars
+  73:8  warning  React Hook useEffect has a missing dependency: 'engine'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/components/dashboard/DashboardGrid.tsx
+  3:17  warning  'useState' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/components/dashboard/DashboardModals.tsx
+  4:10  warning  'Settings' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/components/dashboard/LivePanel.tsx
+   3:38  warning  'useCallback' is defined but never used                                                                                                                                                                                              @typescript-eslint/no-unused-vars
+  40:8   warning  React Hook useEffect has a missing dependency: 'value'. Either include it or remove the dependency array. You can also replace multiple useState variables with useReducer if 'setPreviousValue' needs the current value of 'value'  react-hooks/exhaustive-deps
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/components/dashboard/QueryBuilder.tsx
+  4:43  warning  'X' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/components/dashboard/ResizablePanel.tsx
+  11:7  warning  'resizeHandles' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/components/dashboard/ShareModal.tsx
+   3:27  warning  'useEffect' is defined but never used    @typescript-eslint/no-unused-vars
+   3:38  warning  'useCallback' is defined but never used  @typescript-eslint/no-unused-vars
+  12:5   warning  'X' is defined but never used            @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/components/devices/MQTTSensorDashboard.tsx
+  12:5  warning  'RefreshCw' is defined but never used     @typescript-eslint/no-unused-vars
+  14:5  warning  'Settings' is defined but never used      @typescript-eslint/no-unused-vars
+  15:5  warning  'Trash2' is defined but never used        @typescript-eslint/no-unused-vars
+  16:5  warning  'CheckCircle' is defined but never used   @typescript-eslint/no-unused-vars
+  17:5  warning  'AlertCircle' is defined but never used   @typescript-eslint/no-unused-vars
+  20:5  warning  'ChevronRight' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/components/explore/GlobalQueryExplorer.tsx
+   16:5   warning  'X' is defined but never used                                                                                              @typescript-eslint/no-unused-vars
+   46:11  warning  'regions' is assigned a value but never used                                                                               @typescript-eslint/no-unused-vars
+  117:8   warning  React Hook useCallback has an unnecessary dependency: 'selectedRegions'. Either exclude it or remove the dependency array  react-hooks/exhaustive-deps
+  344:65  warning  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                            react/no-unescaped-entities
+  344:69  warning  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                            react/no-unescaped-entities
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/components/layout/Shell.tsx
+   12:5   warning  'ShieldCheck' is defined but never used                                                     @typescript-eslint/no-unused-vars
+   20:5   warning  'LayoutGrid' is defined but never used                                                      @typescript-eslint/no-unused-vars
+   56:28  warning  'status' is assigned a value but never used                                                 @typescript-eslint/no-unused-vars
+  161:29  warning  Do not pass children as props. Instead, nest children between the opening and closing tags  react/no-children-prop
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/features/dashboard/components/ChronosScrubber.tsx
+  15:5   warning  'Pause' is defined but never used               @typescript-eslint/no-unused-vars
+  22:5   warning  'Tag' is defined but never used                 @typescript-eslint/no-unused-vars
+  35:9   warning  'timeRange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  42:11  warning  'sliderRef' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/features/dashboard/components/DashboardCanvas.tsx
+   3:27  warning  'useCallback' is defined but never used                          @typescript-eslint/no-unused-vars
+   4:38  warning  'Panel' is defined but never used                                @typescript-eslint/no-unused-vars
+  19:42  warning  'updatePanelGridPos' is assigned a value but never used          @typescript-eslint/no-unused-vars
+  21:11  warning  'isEditable' is assigned a value but never used                  @typescript-eslint/no-unused-vars
+  88:31  warning  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  88:35  warning  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/features/dashboard/components/DashboardPage.tsx
+  14:5   warning  'Download' is defined but never used  @typescript-eslint/no-unused-vars
+  15:5   warning  'FileJson' is defined but never used  @typescript-eslint/no-unused-vars
+  17:5   warning  'Zap' is defined but never used       @typescript-eslint/no-unused-vars
+  21:21  warning  'Panel' is defined but never used     @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/features/dashboard/components/DashboardTemplatesModal.tsx
+   8:5   warning  'Gauge' is defined but never used      @typescript-eslint/no-unused-vars
+  10:5   warning  'Database' is defined but never used   @typescript-eslint/no-unused-vars
+  12:5   warning  'Clock' is defined but never used      @typescript-eslint/no-unused-vars
+  14:10  warning  'Dashboard' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/features/dashboard/components/PanelEditor.tsx
+  3:27  warning  'useEffect' is defined but never used  @typescript-eslint/no-unused-vars
+  5:5   warning  'X' is defined but never used          @typescript-eslint/no-unused-vars
+  7:5   warning  'Play' is defined but never used       @typescript-eslint/no-unused-vars
+  8:5   warning  'Code' is defined but never used       @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/features/dashboard/components/TimePicker.tsx
+    4:10   warning  'format' is defined but never used        @typescript-eslint/no-unused-vars
+    4:18   warning  'subMinutes' is defined but never used    @typescript-eslint/no-unused-vars
+    4:30   warning  'subHours' is defined but never used      @typescript-eslint/no-unused-vars
+    4:40   warning  'subDays' is defined but never used       @typescript-eslint/no-unused-vars
+    4:49   warning  'startOfDay' is defined but never used    @typescript-eslint/no-unused-vars
+    4:61   warning  'endOfDay' is defined but never used      @typescript-eslint/no-unused-vars
+    4:71   warning  'startOfWeek' is defined but never used   @typescript-eslint/no-unused-vars
+    4:84   warning  'endOfWeek' is defined but never used     @typescript-eslint/no-unused-vars
+    4:95   warning  'startOfMonth' is defined but never used  @typescript-eslint/no-unused-vars
+    4:109  warning  'endOfMonth' is defined but never used    @typescript-eslint/no-unused-vars
+    5:20   warning  'Clock' is defined but never used         @typescript-eslint/no-unused-vars
+  216:54   warning  'lastRefresh' is defined but never used   @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/features/dashboard/widgets/BarChart/BarChartWidget.tsx
+  19:52  warning  'variables' is defined but never used          @typescript-eslint/no-unused-vars
+  23:11  warning  'barWidth' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/features/dashboard/widgets/Forecast/ForecastWidget.tsx
+   75:5  warning  'timeRange' is defined but never used                 @typescript-eslint/no-unused-vars
+   76:5  warning  'variables' is defined but never used                 @typescript-eslint/no-unused-vars
+   77:5  warning  'width' is defined but never used                     @typescript-eslint/no-unused-vars
+   78:5  warning  'height' is defined but never used                    @typescript-eslint/no-unused-vars
+  346:9  warning  'baseValue' is never reassigned. Use 'const' instead  prefer-const
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/features/dashboard/widgets/Gauge/GaugeWidget.tsx
+   8:38  warning  'timeRange' is defined but never used                                                                                                                                                                  @typescript-eslint/no-unused-vars
+   8:49  warning  'variables' is defined but never used                                                                                                                                                                  @typescript-eslint/no-unused-vars
+  10:11  warning  The 'fieldConfig' logical expression could make the dependencies of useMemo Hook (at line 55) change on every render. To fix this, wrap the initialization of 'fieldConfig' in its own useMemo() Hook  react-hooks/exhaustive-deps
+  51:13  warning  'formatted' is never reassigned. Use 'const' instead                                                                                                                                                   prefer-const
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/features/dashboard/widgets/Stat/StatWidget.tsx
+   7:45  warning  'Activity' is defined but never used                                                                                                                                                                   @typescript-eslint/no-unused-vars
+  12:11  warning  The 'fieldConfig' logical expression could make the dependencies of useMemo Hook (at line 70) change on every render. To fix this, wrap the initialization of 'fieldConfig' in its own useMemo() Hook  react-hooks/exhaustive-deps
+  51:13  warning  'formatted' is never reassigned. Use 'const' instead                                                                                                                                                   prefer-const
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/features/dashboard/widgets/StatusGrid/StatusGridWidget.tsx
+  9:43  warning  'timeRange' is defined but never used  @typescript-eslint/no-unused-vars
+  9:54  warning  'variables' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/features/dashboard/widgets/Text/TextWidget.tsx
+  37:17  warning  'formatted' is never reassigned. Use 'const' instead  prefer-const
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/features/topology/components/ImpactGraph.tsx
+   26:31  warning  'Database' is defined but never used      @typescript-eslint/no-unused-vars
+   31:11  warning  'TopologyNode' is defined but never used  @typescript-eslint/no-unused-vars
+  230:28  warning  'rootId' is defined but never used        @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/lib/correlation.ts
+  389:15  warning  'conditionOrder' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/lib/datasources/prometheus.ts
+  5:5  warning  'DataQuery' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/lib/hooks/useDataQuery.ts
+    5:5   warning  'DataQueryRequest' is defined but never used                                                                                                       @typescript-eslint/no-unused-vars
+    6:5   warning  'DataQueryResponse' is defined but never used                                                                                                      @typescript-eslint/no-unused-vars
+    7:18  warning  'DSTimeRange' is defined but never used                                                                                                            @typescript-eslint/no-unused-vars
+  114:17  warning  'finalTimeRange' is assigned a value but never used                                                                                                @typescript-eslint/no-unused-vars
+  155:8   warning  React Hook useCallback has missing dependencies: 'isScrubbing', 'options', and 'scrubbedTime'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  211:13  warning  'panelType' is assigned a value but never used                                                                                                     @typescript-eslint/no-unused-vars
+  258:19  warning  'setError' is assigned a value but never used                                                                                                      @typescript-eslint/no-unused-vars
+  289:22  warning  'err' is defined but never used                                                                                                                    @typescript-eslint/no-unused-vars
+  323:19  warning  'setError' is assigned a value but never used                                                                                                      @typescript-eslint/no-unused-vars
+  367:22  warning  'err' is defined but never used                                                                                                                    @typescript-eslint/no-unused-vars
+  404:23  warning  'setIsLoading' is assigned a value but never used                                                                                                  @typescript-eslint/no-unused-vars
+  431:23  warning  'setIsLoading' is assigned a value but never used                                                                                                  @typescript-eslint/no-unused-vars
+  460:23  warning  'setIsLoading' is assigned a value but never used                                                                                                  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/lib/runbook.ts
+  385:61  warning  'variables' is defined but never used  @typescript-eslint/no-unused-vars
+  398:59  warning  'variables' is defined but never used  @typescript-eslint/no-unused-vars
+  409:34  warning  'config' is defined but never used     @typescript-eslint/no-unused-vars
+  409:61  warning  'variables' is defined but never used  @typescript-eslint/no-unused-vars
+  447:68  warning  'variables' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/middleware.ts
+  3:15  warning  'NextRequest' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/hari/.gemini/antigravity/playground/blazing-sagan/ui/src/providers/WebSocketProvider.tsx
+   4:24  warning  'useWebSocketStore' is defined but never used                                                          @typescript-eslint/no-unused-vars
+  34:8   warning  React Hook useEffect has a missing dependency: 'ws'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+✖ 169 problems (0 errors, 169 warnings)
+  0 errors and 4 warnings potentially fixable with the `--fix` option.
+

@@ -1,0 +1,2 @@
+#!/bin/sh
+cd ui && npm run test:coverage
