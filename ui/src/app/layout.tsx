@@ -5,7 +5,7 @@ import "./globals.css";
 import { AuthProvider } from "@/components/providers/AuthProvider";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 
-const CommandPalette = dynamic(() => import("@/components/CommandPalette"), { ssr: false });
+import { CommandPaletteWrapper } from "@/components/CommandPaletteWrapper";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -37,7 +37,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${outfit.variable} ${jetbrains.variable} antialiased`}>
         <AuthProvider>
           <ThemeProvider>
-            <CommandPalette />
+            <CommandPaletteWrapper />
             {children}
           </ThemeProvider>
         </AuthProvider>
