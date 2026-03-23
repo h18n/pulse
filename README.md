@@ -1,14 +1,9 @@
-<p align="center">
-  <img src="docs/assets/logo-full.png" alt="Pulse Logo" width="400">
-</p>
-
-<h1 align="center">Pulse</h1>
+<h1 align="center">
+  <img src="docs/assets/logo-full.png" alt="Pulse" width="400">
+</h1>
 
 <p align="center">
-  <strong>AI-Powered Observability Platform for Modern Infrastructure</strong><br>
-  <a href="https://github.com/sponsors/h18n">
-    <img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?style=for-the-badge&logo=github" alt="Sponsor this project">
-  </a>
+  <strong>AI-Powered Observability Platform for Modern Infrastructure</strong>
 </p>
 
 <p align="center">
@@ -28,6 +23,9 @@
   <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="Version">
   <img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg" alt="License">
   <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome">
+  <a href="https://github.com/sponsors/h18n">
+    <img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?style=for-the-badge&logo=github" alt="Sponsor this project">
+  </a>
 </p>
 
 ---
