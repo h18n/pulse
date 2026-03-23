@@ -40,7 +40,6 @@ jobs:
       
     - name: Build All
       run: |
-        npm run build --workspaces --if-present
         cd ui && npm run build
         
     - name: Install Playwright Browsers
