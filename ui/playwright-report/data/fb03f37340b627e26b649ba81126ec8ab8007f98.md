@@ -1,0 +1,80 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - generic [ref=e8]: PULSE
+      - navigation [ref=e9]:
+        - link "Dashboards" [ref=e10] [cursor=pointer]:
+          - /url: /dashboards
+          - img [ref=e11]
+          - text: Dashboards
+        - button "Explore" [ref=e17]:
+          - img [ref=e18]
+          - generic [ref=e21]: Explore
+          - img [ref=e22]
+        - button "Alerts" [ref=e25]:
+          - img [ref=e26]
+          - generic [ref=e29]: Alerts
+          - img [ref=e30]
+        - link "Incidents" [ref=e32] [cursor=pointer]:
+          - /url: /incidents
+          - img [ref=e33]
+          - text: Incidents
+        - link "Devices" [ref=e35] [cursor=pointer]:
+          - /url: /devices
+          - img [ref=e36]
+          - text: Devices
+        - link "AI Copilot" [ref=e39] [cursor=pointer]:
+          - /url: /copilot
+          - img [ref=e40]
+          - text: AI Copilot
+      - link "System Settings" [ref=e44] [cursor=pointer]:
+        - /url: /settings
+        - img [ref=e45]
+        - text: System Settings
+      - button [ref=e48]:
+        - img [ref=e49]
+    - main [ref=e51]:
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - button [ref=e54]:
+            - img [ref=e55]
+          - generic [ref=e56]:
+            - img [ref=e57]
+            - textbox "Search..." [ref=e60]
+        - generic [ref=e61]:
+          - generic [ref=e62]: US-EAST
+          - button [ref=e65]:
+            - img [ref=e66]
+          - button [ref=e68]:
+            - img [ref=e69]
+          - button "E" [ref=e74]:
+            - generic [ref=e75]: E
+            - img [ref=e76]
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e80]:
+            - button [ref=e81]:
+              - img [ref=e82]
+            - heading "E2E Dashboard" [level=1] [ref=e85]
+          - generic [ref=e86]:
+            - button [ref=e87]:
+              - img [ref=e88]
+            - button "Discard" [ref=e91]
+            - button "Save" [ref=e92]:
+              - img [ref=e93]
+              - text: Save
+        - generic [ref=e97]:
+          - button "Add visualization" [ref=e99]:
+            - img [ref=e100]
+            - text: Add visualization
+          - generic [ref=e101]:
+            - img [ref=e103]
+            - heading "No panels yet" [level=3] [ref=e104]
+            - paragraph [ref=e105]: Click "Add visualization" to add your first panel.
+  - alert [ref=e106]
+```

@@ -1,0 +1,102 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - generic [ref=e8]: PULSE
+      - navigation [ref=e9]:
+        - link "Dashboards" [ref=e10] [cursor=pointer]:
+          - /url: /dashboards
+          - img [ref=e11]
+          - text: Dashboards
+        - button "Explore" [ref=e17]:
+          - img [ref=e18]
+          - generic [ref=e21]: Explore
+          - img [ref=e22]
+        - generic [ref=e24]:
+          - button "Alerts" [active] [ref=e25]:
+            - img [ref=e26]
+            - generic [ref=e29]: Alerts
+            - img [ref=e30]
+          - generic [ref=e32]:
+            - link "Active Alerts" [ref=e33] [cursor=pointer]:
+              - /url: /alerts
+            - link "Alert Rules" [ref=e34] [cursor=pointer]:
+              - /url: /alerts/rules
+            - link "Notification Channels" [ref=e35] [cursor=pointer]:
+              - /url: /alerts/channels
+        - link "Incidents" [ref=e36] [cursor=pointer]:
+          - /url: /incidents
+          - img [ref=e37]
+          - text: Incidents
+        - link "Devices" [ref=e39] [cursor=pointer]:
+          - /url: /devices
+          - img [ref=e40]
+          - text: Devices
+        - link "AI Copilot" [ref=e43] [cursor=pointer]:
+          - /url: /copilot
+          - img [ref=e44]
+          - text: AI Copilot
+      - link "System Settings" [ref=e48] [cursor=pointer]:
+        - /url: /settings
+        - img [ref=e49]
+        - text: System Settings
+      - button [ref=e52]:
+        - img [ref=e53]
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - button [ref=e58]:
+            - img [ref=e59]
+          - generic [ref=e60]:
+            - img [ref=e61]
+            - textbox "Search..." [ref=e64]
+        - generic [ref=e65]:
+          - generic [ref=e66]: US-EAST
+          - button [ref=e69]:
+            - img [ref=e70]
+          - button [ref=e72]:
+            - img [ref=e73]
+          - button "U" [ref=e78]:
+            - generic [ref=e79]: U
+            - img [ref=e80]
+      - generic [ref=e83]:
+        - generic [ref=e84]:
+          - heading "Dashboards" [level=1] [ref=e85]
+          - button "New Dashboard" [ref=e86]:
+            - img [ref=e87]
+            - text: New Dashboard
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - img [ref=e90]
+            - textbox "Search dashboards..." [ref=e93]
+          - button "Recently Updated" [ref=e95]:
+            - img [ref=e96]
+            - text: Recently Updated
+            - img [ref=e99]
+          - generic [ref=e101]:
+            - button [ref=e102]:
+              - img [ref=e103]
+            - button [ref=e105]:
+              - img [ref=e106]
+        - generic [ref=e107]:
+          - generic [ref=e108]:
+            - heading "FOLDERS" [level=2] [ref=e109]:
+              - img [ref=e110]
+              - text: FOLDERS
+            - button "New Folder" [ref=e112]:
+              - img [ref=e113]
+              - text: New Folder
+          - paragraph [ref=e115]: No folders yet. Create one to organize your dashboards.
+        - generic [ref=e116]:
+          - img [ref=e118]
+          - heading "No dashboards yet" [level=3] [ref=e120]
+          - paragraph [ref=e121]: Create your first dashboard to start monitoring your infrastructure.
+          - button "Create Dashboard" [ref=e122]:
+            - img [ref=e123]
+            - text: Create Dashboard
+  - alert [ref=e124]
+```

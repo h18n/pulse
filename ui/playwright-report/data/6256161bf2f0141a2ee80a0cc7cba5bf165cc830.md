@@ -1,0 +1,688 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - generic [ref=e8]: PULSE
+      - navigation [ref=e9]:
+        - link "Dashboards" [ref=e10] [cursor=pointer]:
+          - /url: /dashboards
+          - img [ref=e11]
+          - text: Dashboards
+        - generic [ref=e16]:
+          - button "Explore" [ref=e17]:
+            - img [ref=e18]
+            - generic [ref=e21]: Explore
+            - img [ref=e22]
+          - generic [ref=e24]:
+            - link "Overview" [ref=e25] [cursor=pointer]:
+              - /url: /explore
+            - link "Logs" [ref=e26] [cursor=pointer]:
+              - /url: /explore/logs
+            - link "Metrics" [ref=e27] [cursor=pointer]:
+              - /url: /explore/metrics
+        - button "Alerts" [ref=e29]:
+          - img [ref=e30]
+          - generic [ref=e33]: Alerts
+          - img [ref=e34]
+        - link "Incidents" [ref=e36] [cursor=pointer]:
+          - /url: /incidents
+          - img [ref=e37]
+          - text: Incidents
+        - link "Devices" [ref=e39] [cursor=pointer]:
+          - /url: /devices
+          - img [ref=e40]
+          - text: Devices
+        - link "AI Copilot" [ref=e43] [cursor=pointer]:
+          - /url: /copilot
+          - img [ref=e44]
+          - text: AI Copilot
+      - link "System Settings" [ref=e48] [cursor=pointer]:
+        - /url: /settings
+        - img [ref=e49]
+        - text: System Settings
+      - button [ref=e52]:
+        - img [ref=e53]
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - button [ref=e58]:
+            - img [ref=e59]
+          - generic [ref=e60]:
+            - img [ref=e61]
+            - textbox "Search..." [ref=e64]
+        - generic [ref=e65]:
+          - generic [ref=e66]: US-EAST
+          - button [ref=e69]:
+            - img [ref=e70]
+          - button [ref=e72]:
+            - img [ref=e73]
+          - button "U" [ref=e78]:
+            - generic [ref=e79]: U
+            - img [ref=e80]
+      - generic [ref=e83]:
+        - generic [ref=e84]:
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - button [ref=e87]:
+                - img [ref=e88]
+              - img [ref=e91]
+              - generic [ref=e93]:
+                - heading "Logs Explorer" [level=1] [ref=e94]
+                - paragraph [ref=e95]: Search and analyze application logs
+            - generic [ref=e96]:
+              - button "Live Tail" [ref=e97]:
+                - img [ref=e98]
+                - text: Live Tail
+              - button [ref=e100]:
+                - img [ref=e101]
+              - button [ref=e104]:
+                - img [ref=e105]
+          - generic [ref=e108]:
+            - generic [ref=e109]:
+              - img [ref=e110]
+              - textbox "Search logs by message, service, or metadata..." [ref=e113]
+            - combobox [ref=e114]:
+              - option "Last 15 minutes"
+              - option "Last 1 hour" [selected]
+              - option "Last 6 hours"
+              - option "Last 24 hours"
+              - option "Last 7 days"
+            - button [ref=e115]:
+              - img [ref=e116]
+          - generic [ref=e121]:
+            - generic [ref=e122]: "Levels:"
+            - button "error (10)" [ref=e123]:
+              - img [ref=e124]
+              - generic [ref=e126]: error
+              - generic [ref=e127]: (10)
+            - button "warn (14)" [ref=e128]:
+              - img [ref=e129]
+              - generic [ref=e131]: warn
+              - generic [ref=e132]: (14)
+            - button "info (12)" [ref=e133]:
+              - img [ref=e134]
+              - generic [ref=e136]: info
+              - generic [ref=e137]: (12)
+            - button "debug (7)" [ref=e138]:
+              - img [ref=e139]
+              - generic [ref=e148]: debug
+              - generic [ref=e149]: (7)
+            - button "trace (7)" [ref=e150]:
+              - img [ref=e151]
+              - generic [ref=e153]: trace
+              - generic [ref=e154]: (7)
+            - generic [ref=e155]: "Services:"
+            - button "api-gateway" [ref=e156]
+            - button "scheduler" [ref=e157]
+            - button "notification-service" [ref=e158]
+            - button "user-service" [ref=e159]
+            - generic [ref=e160]: +2 more
+        - generic [ref=e162]:
+          - generic [ref=e164] [cursor=pointer]:
+            - button [ref=e165]:
+              - img [ref=e166]
+            - generic [ref=e168]:
+              - text: 21:55:07
+              - generic [ref=e169]: ".107"
+            - generic [ref=e171]:
+              - img [ref=e172]
+              - text: warn
+            - generic [ref=e174]: api-gateway
+            - generic [ref=e175]: Rate limit approaching threshold
+            - button [ref=e177]:
+              - img [ref=e178]
+          - generic [ref=e182] [cursor=pointer]:
+            - button [ref=e183]:
+              - img [ref=e184]
+            - generic [ref=e186]:
+              - text: 21:55:04
+              - generic [ref=e187]: ".676"
+            - generic [ref=e189]:
+              - img [ref=e190]
+              - text: error
+            - generic [ref=e192]: scheduler
+            - generic [ref=e193]: Out of memory exception
+            - button [ref=e195]:
+              - img [ref=e196]
+          - generic [ref=e200] [cursor=pointer]:
+            - button [ref=e201]:
+              - img [ref=e202]
+            - generic [ref=e204]:
+              - text: 21:54:55
+              - generic [ref=e205]: ".494"
+            - generic [ref=e207]:
+              - img [ref=e208]
+              - text: warn
+            - generic [ref=e210]: notification-service
+            - generic [ref=e211]: Slow query detected (>500ms)
+            - button [ref=e213]:
+              - img [ref=e214]
+          - generic [ref=e218] [cursor=pointer]:
+            - button [ref=e219]:
+              - img [ref=e220]
+            - generic [ref=e222]:
+              - text: 21:54:44
+              - generic [ref=e223]: ".818"
+            - generic [ref=e225]:
+              - img [ref=e226]
+              - text: error
+            - generic [ref=e228]: user-service
+            - generic [ref=e229]: Failed to parse JSON payload
+            - button [ref=e231]:
+              - img [ref=e232]
+          - generic [ref=e236] [cursor=pointer]:
+            - button [ref=e237]:
+              - img [ref=e238]
+            - generic [ref=e240]:
+              - text: 21:54:15
+              - generic [ref=e241]: ".487"
+            - generic [ref=e243]:
+              - img [ref=e244]
+              - text: debug
+            - generic [ref=e253]: auth-service
+            - generic [ref=e254]: Starting background task
+            - button [ref=e256]:
+              - img [ref=e257]
+          - generic [ref=e261] [cursor=pointer]:
+            - button [ref=e262]:
+              - img [ref=e263]
+            - generic [ref=e265]:
+              - text: 21:54:09
+              - generic [ref=e266]: ".534"
+            - generic [ref=e268]:
+              - img [ref=e269]
+              - text: warn
+            - generic [ref=e271]: notification-service
+            - generic [ref=e272]: Deprecated API endpoint called
+            - button [ref=e274]:
+              - img [ref=e275]
+          - generic [ref=e279] [cursor=pointer]:
+            - button [ref=e280]:
+              - img [ref=e281]
+            - generic [ref=e283]:
+              - text: 21:53:28
+              - generic [ref=e284]: ".448"
+            - generic [ref=e286]:
+              - img [ref=e287]
+              - text: error
+            - generic [ref=e289]: auth-service
+            - generic [ref=e290]: Failed to parse JSON payload
+            - button [ref=e292]:
+              - img [ref=e293]
+          - generic [ref=e297] [cursor=pointer]:
+            - button [ref=e298]:
+              - img [ref=e299]
+            - generic [ref=e301]:
+              - text: 21:52:23
+              - generic [ref=e302]: ".274"
+            - generic [ref=e304]:
+              - img [ref=e305]
+              - text: info
+            - generic [ref=e307]: user-service
+            - generic [ref=e308]: Cache invalidated
+            - button [ref=e310]:
+              - img [ref=e311]
+          - generic [ref=e315] [cursor=pointer]:
+            - button [ref=e316]:
+              - img [ref=e317]
+            - generic [ref=e319]:
+              - text: 21:51:23
+              - generic [ref=e320]: ".828"
+            - generic [ref=e322]:
+              - img [ref=e323]
+              - text: info
+            - generic [ref=e325]: scheduler
+            - generic [ref=e326]: User login successful
+            - button [ref=e328]:
+              - img [ref=e329]
+          - generic [ref=e333] [cursor=pointer]:
+            - button [ref=e334]:
+              - img [ref=e335]
+            - generic [ref=e337]:
+              - text: 21:50:55
+              - generic [ref=e338]: ".706"
+            - generic [ref=e340]:
+              - img [ref=e341]
+              - text: warn
+            - generic [ref=e343]: api-gateway
+            - generic [ref=e344]: High memory usage detected
+            - button [ref=e346]:
+              - img [ref=e347]
+          - generic [ref=e351] [cursor=pointer]:
+            - button [ref=e352]:
+              - img [ref=e353]
+            - generic [ref=e355]:
+              - text: 21:50:44
+              - generic [ref=e356]: ".593"
+            - generic [ref=e358]:
+              - img [ref=e359]
+              - text: warn
+            - generic [ref=e361]: user-service
+            - generic [ref=e362]: Slow query detected (>500ms)
+            - button [ref=e364]:
+              - img [ref=e365]
+          - generic [ref=e369] [cursor=pointer]:
+            - button [ref=e370]:
+              - img [ref=e371]
+            - generic [ref=e373]:
+              - text: 21:50:43
+              - generic [ref=e374]: ".485"
+            - generic [ref=e376]:
+              - img [ref=e377]
+              - text: debug
+            - generic [ref=e386]: notification-service
+            - generic [ref=e387]: Database query executed
+            - button [ref=e389]:
+              - img [ref=e390]
+          - generic [ref=e394] [cursor=pointer]:
+            - button [ref=e395]:
+              - img [ref=e396]
+            - generic [ref=e398]:
+              - text: 21:49:39
+              - generic [ref=e399]: ".440"
+            - generic [ref=e401]:
+              - img [ref=e402]
+              - text: warn
+            - generic [ref=e404]: user-service
+            - generic [ref=e405]: High memory usage detected
+            - button [ref=e407]:
+              - img [ref=e408]
+          - generic [ref=e412] [cursor=pointer]:
+            - button [ref=e413]:
+              - img [ref=e414]
+            - generic [ref=e416]:
+              - text: 21:49:22
+              - generic [ref=e417]: ".155"
+            - generic [ref=e419]:
+              - img [ref=e420]
+              - text: info
+            - generic [ref=e422]: api-gateway
+            - generic [ref=e423]: Request processed successfully
+            - button [ref=e425]:
+              - img [ref=e426]
+          - generic [ref=e430] [cursor=pointer]:
+            - button [ref=e431]:
+              - img [ref=e432]
+            - generic [ref=e434]:
+              - text: 21:48:12
+              - generic [ref=e435]: ".738"
+            - generic [ref=e437]:
+              - img [ref=e438]
+              - text: info
+            - generic [ref=e440]: notification-service
+            - generic [ref=e441]: Request processed successfully
+            - button [ref=e443]:
+              - img [ref=e444]
+          - generic [ref=e448] [cursor=pointer]:
+            - button [ref=e449]:
+              - img [ref=e450]
+            - generic [ref=e452]:
+              - text: 21:47:44
+              - generic [ref=e453]: ".184"
+            - generic [ref=e455]:
+              - img [ref=e456]
+              - text: warn
+            - generic [ref=e458]: notification-service
+            - generic [ref=e459]: Rate limit approaching threshold
+            - button [ref=e461]:
+              - img [ref=e462]
+          - generic [ref=e466] [cursor=pointer]:
+            - button [ref=e467]:
+              - img [ref=e468]
+            - generic [ref=e470]:
+              - text: 21:47:39
+              - generic [ref=e471]: ".922"
+            - generic [ref=e473]:
+              - img [ref=e474]
+              - text: error
+            - generic [ref=e476]: api-gateway
+            - generic [ref=e477]: Request timeout after 30000ms
+            - button [ref=e479]:
+              - img [ref=e480]
+          - generic [ref=e484] [cursor=pointer]:
+            - button [ref=e485]:
+              - img [ref=e486]
+            - generic [ref=e488]:
+              - text: 21:47:31
+              - generic [ref=e489]: ".475"
+            - generic [ref=e491]:
+              - img [ref=e492]
+              - text: error
+            - generic [ref=e494]: notification-service
+            - generic [ref=e495]: Connection refused to database
+            - button [ref=e497]:
+              - img [ref=e498]
+          - generic [ref=e502] [cursor=pointer]:
+            - button [ref=e503]:
+              - img [ref=e504]
+            - generic [ref=e506]:
+              - text: 21:47:04
+              - generic [ref=e507]: ".179"
+            - generic [ref=e509]:
+              - img [ref=e510]
+              - text: warn
+            - generic [ref=e512]: api-gateway
+            - generic [ref=e513]: Deprecated API endpoint called
+            - button [ref=e515]:
+              - img [ref=e516]
+          - generic [ref=e520] [cursor=pointer]:
+            - button [ref=e521]:
+              - img [ref=e522]
+            - generic [ref=e524]:
+              - text: 21:46:56
+              - generic [ref=e525]: ".928"
+            - generic [ref=e527]:
+              - img [ref=e528]
+              - text: warn
+            - generic [ref=e530]: notification-service
+            - generic [ref=e531]: Rate limit approaching threshold
+            - button [ref=e533]:
+              - img [ref=e534]
+          - generic [ref=e538] [cursor=pointer]:
+            - button [ref=e539]:
+              - img [ref=e540]
+            - generic [ref=e542]:
+              - text: 21:46:52
+              - generic [ref=e543]: ".541"
+            - generic [ref=e545]:
+              - img [ref=e546]
+              - text: error
+            - generic [ref=e548]: scheduler
+            - generic [ref=e549]: Authentication failed for user
+            - button [ref=e551]:
+              - img [ref=e552]
+          - generic [ref=e556] [cursor=pointer]:
+            - button [ref=e557]:
+              - img [ref=e558]
+            - generic [ref=e560]:
+              - text: 21:46:39
+              - generic [ref=e561]: ".127"
+            - generic [ref=e563]:
+              - img [ref=e564]
+              - text: debug
+            - generic [ref=e573]: scheduler
+            - generic [ref=e574]: Processing request payload
+            - button [ref=e576]:
+              - img [ref=e577]
+          - generic [ref=e581] [cursor=pointer]:
+            - button [ref=e582]:
+              - img [ref=e583]
+            - generic [ref=e585]:
+              - text: 21:46:13
+              - generic [ref=e586]: ".137"
+            - generic [ref=e588]:
+              - img [ref=e589]
+              - text: info
+            - generic [ref=e591]: auth-service
+            - generic [ref=e592]: Cache invalidated
+            - button [ref=e594]:
+              - img [ref=e595]
+          - generic [ref=e599] [cursor=pointer]:
+            - button [ref=e600]:
+              - img [ref=e601]
+            - generic [ref=e603]:
+              - text: 21:46:06
+              - generic [ref=e604]: ".491"
+            - generic [ref=e606]:
+              - img [ref=e607]
+              - text: info
+            - generic [ref=e609]: scheduler
+            - generic [ref=e610]: Request processed successfully
+            - button [ref=e612]:
+              - img [ref=e613]
+          - generic [ref=e617] [cursor=pointer]:
+            - button [ref=e618]:
+              - img [ref=e619]
+            - generic [ref=e621]:
+              - text: 21:45:36
+              - generic [ref=e622]: ".958"
+            - generic [ref=e624]:
+              - img [ref=e625]
+              - text: warn
+            - generic [ref=e627]: user-service
+            - generic [ref=e628]: High memory usage detected
+            - button [ref=e630]:
+              - img [ref=e631]
+          - generic [ref=e635] [cursor=pointer]:
+            - button [ref=e636]:
+              - img [ref=e637]
+            - generic [ref=e639]:
+              - text: 21:45:14
+              - generic [ref=e640]: ".484"
+            - generic [ref=e642]:
+              - img [ref=e643]
+              - text: warn
+            - generic [ref=e645]: notification-service
+            - generic [ref=e646]: Deprecated API endpoint called
+            - button [ref=e648]:
+              - img [ref=e649]
+          - generic [ref=e653] [cursor=pointer]:
+            - button [ref=e654]:
+              - img [ref=e655]
+            - generic [ref=e657]:
+              - text: 21:43:34
+              - generic [ref=e658]: ".975"
+            - generic [ref=e660]:
+              - img [ref=e661]
+              - text: error
+            - generic [ref=e663]: api-gateway
+            - generic [ref=e664]: Connection refused to database
+            - button [ref=e666]:
+              - img [ref=e667]
+          - generic [ref=e671] [cursor=pointer]:
+            - button [ref=e672]:
+              - img [ref=e673]
+            - generic [ref=e675]:
+              - text: 21:43:04
+              - generic [ref=e676]: ".653"
+            - generic [ref=e678]:
+              - img [ref=e679]
+              - text: error
+            - generic [ref=e681]: payment-service
+            - generic [ref=e682]: Failed to parse JSON payload
+            - button [ref=e684]:
+              - img [ref=e685]
+          - generic [ref=e689] [cursor=pointer]:
+            - button [ref=e690]:
+              - img [ref=e691]
+            - generic [ref=e693]:
+              - text: 21:42:28
+              - generic [ref=e694]: ".752"
+            - generic [ref=e696]:
+              - img [ref=e697]
+              - text: debug
+            - generic [ref=e706]: auth-service
+            - generic [ref=e707]: "Cache lookup result: HIT"
+            - button [ref=e709]:
+              - img [ref=e710]
+          - generic [ref=e714] [cursor=pointer]:
+            - button [ref=e715]:
+              - img [ref=e716]
+            - generic [ref=e718]:
+              - text: 21:41:21
+              - generic [ref=e719]: ".313"
+            - generic [ref=e721]:
+              - img [ref=e722]
+              - text: debug
+            - generic [ref=e731]: auth-service
+            - generic [ref=e732]: Starting background task
+            - button [ref=e734]:
+              - img [ref=e735]
+          - generic [ref=e739] [cursor=pointer]:
+            - button [ref=e740]:
+              - img [ref=e741]
+            - generic [ref=e743]:
+              - text: 21:40:34
+              - generic [ref=e744]: ".195"
+            - generic [ref=e746]:
+              - img [ref=e747]
+              - text: debug
+            - generic [ref=e756]: user-service
+            - generic [ref=e757]: Processing request payload
+            - button [ref=e759]:
+              - img [ref=e760]
+          - generic [ref=e764] [cursor=pointer]:
+            - button [ref=e765]:
+              - img [ref=e766]
+            - generic [ref=e768]:
+              - text: 21:39:03
+              - generic [ref=e769]: ".469"
+            - generic [ref=e771]:
+              - img [ref=e772]
+              - text: error
+            - generic [ref=e774]: auth-service
+            - generic [ref=e775]: Connection refused to database
+            - button [ref=e777]:
+              - img [ref=e778]
+          - generic [ref=e782] [cursor=pointer]:
+            - button [ref=e783]:
+              - img [ref=e784]
+            - generic [ref=e786]:
+              - text: 21:37:13
+              - generic [ref=e787]: ".081"
+            - generic [ref=e789]:
+              - img [ref=e790]
+              - text: debug
+            - generic [ref=e799]: scheduler
+            - generic [ref=e800]: "Cache lookup result: HIT"
+            - button [ref=e802]:
+              - img [ref=e803]
+          - generic [ref=e807] [cursor=pointer]:
+            - button [ref=e808]:
+              - img [ref=e809]
+            - generic [ref=e811]:
+              - text: 21:36:38
+              - generic [ref=e812]: ".477"
+            - generic [ref=e814]:
+              - img [ref=e815]
+              - text: info
+            - generic [ref=e817]: notification-service
+            - generic [ref=e818]: Health check passed
+            - button [ref=e820]:
+              - img [ref=e821]
+          - generic [ref=e825] [cursor=pointer]:
+            - button [ref=e826]:
+              - img [ref=e827]
+            - generic [ref=e829]:
+              - text: 21:35:17
+              - generic [ref=e830]: ".106"
+            - generic [ref=e832]:
+              - img [ref=e833]
+              - text: warn
+            - generic [ref=e835]: api-gateway
+            - generic [ref=e836]: High memory usage detected
+            - button [ref=e838]:
+              - img [ref=e839]
+          - generic [ref=e843] [cursor=pointer]:
+            - button [ref=e844]:
+              - img [ref=e845]
+            - generic [ref=e847]:
+              - text: 21:33:53
+              - generic [ref=e848]: ".619"
+            - generic [ref=e850]:
+              - img [ref=e851]
+              - text: warn
+            - generic [ref=e853]: auth-service
+            - generic [ref=e854]: High memory usage detected
+            - button [ref=e856]:
+              - img [ref=e857]
+          - generic [ref=e861] [cursor=pointer]:
+            - button [ref=e862]:
+              - img [ref=e863]
+            - generic [ref=e865]:
+              - text: 21:32:55
+              - generic [ref=e866]: ".983"
+            - generic [ref=e868]:
+              - img [ref=e869]
+              - text: error
+            - generic [ref=e871]: user-service
+            - generic [ref=e872]: Out of memory exception
+            - button [ref=e874]:
+              - img [ref=e875]
+          - generic [ref=e879] [cursor=pointer]:
+            - button [ref=e880]:
+              - img [ref=e881]
+            - generic [ref=e883]:
+              - text: 21:30:41
+              - generic [ref=e884]: ".913"
+            - generic [ref=e886]:
+              - img [ref=e887]
+              - text: info
+            - generic [ref=e889]: scheduler
+            - generic [ref=e890]: User login successful
+            - button [ref=e892]:
+              - img [ref=e893]
+          - generic [ref=e897] [cursor=pointer]:
+            - button [ref=e898]:
+              - img [ref=e899]
+            - generic [ref=e901]:
+              - text: 21:29:21
+              - generic [ref=e902]: ".004"
+            - generic [ref=e904]:
+              - img [ref=e905]
+              - text: info
+            - generic [ref=e907]: api-gateway
+            - generic [ref=e908]: User login successful
+            - button [ref=e910]:
+              - img [ref=e911]
+          - generic [ref=e915] [cursor=pointer]:
+            - button [ref=e916]:
+              - img [ref=e917]
+            - generic [ref=e919]:
+              - text: 21:19:54
+              - generic [ref=e920]: ".769"
+            - generic [ref=e922]:
+              - img [ref=e923]
+              - text: info
+            - generic [ref=e925]: auth-service
+            - generic [ref=e926]: Cache invalidated
+            - button [ref=e928]:
+              - img [ref=e929]
+          - generic [ref=e933] [cursor=pointer]:
+            - button [ref=e934]:
+              - img [ref=e935]
+            - generic [ref=e937]:
+              - text: 21:18:58
+              - generic [ref=e938]: ".750"
+            - generic [ref=e940]:
+              - img [ref=e941]
+              - text: info
+            - generic [ref=e943]: api-gateway
+            - generic [ref=e944]: Scheduled job completed
+            - button [ref=e946]:
+              - img [ref=e947]
+          - generic [ref=e951] [cursor=pointer]:
+            - button [ref=e952]:
+              - img [ref=e953]
+            - generic [ref=e955]:
+              - text: 21:18:31
+              - generic [ref=e956]: ".391"
+            - generic [ref=e958]:
+              - img [ref=e959]
+              - text: info
+            - generic [ref=e961]: api-gateway
+            - generic [ref=e962]: Request processed successfully
+            - button [ref=e964]:
+              - img [ref=e965]
+          - generic [ref=e969] [cursor=pointer]:
+            - button [ref=e970]:
+              - img [ref=e971]
+            - generic [ref=e973]:
+              - text: 21:15:25
+              - generic [ref=e974]: ".772"
+            - generic [ref=e976]:
+              - img [ref=e977]
+              - text: warn
+            - generic [ref=e979]: notification-service
+            - generic [ref=e980]: Certificate expires in 7 days
+            - button [ref=e982]:
+              - img [ref=e983]
+        - generic [ref=e986]:
+          - generic [ref=e987]: Showing 43 of 50 logs
+          - generic [ref=e988]: Live tail active
+  - alert [ref=e990]
+```

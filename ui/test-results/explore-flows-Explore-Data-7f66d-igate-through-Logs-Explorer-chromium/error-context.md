@@ -1,0 +1,130 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - img [ref=e6]
+        - generic [ref=e8]: PULSE
+      - navigation [ref=e9]:
+        - link "Dashboards" [ref=e10] [cursor=pointer]:
+          - /url: /dashboards
+          - img [ref=e11]
+          - text: Dashboards
+        - generic [ref=e16]:
+          - button "Explore" [ref=e17]:
+            - img [ref=e18]
+            - generic [ref=e21]: Explore
+            - img [ref=e22]
+          - generic [ref=e24]:
+            - link "Overview" [ref=e25] [cursor=pointer]:
+              - /url: /explore
+            - link "Logs" [ref=e26] [cursor=pointer]:
+              - /url: /explore/logs
+            - link "Metrics" [ref=e27] [cursor=pointer]:
+              - /url: /explore/metrics
+        - button "Alerts" [ref=e29]:
+          - img [ref=e30]
+          - generic [ref=e33]: Alerts
+          - img [ref=e34]
+        - link "Incidents" [ref=e36] [cursor=pointer]:
+          - /url: /incidents
+          - img [ref=e37]
+          - text: Incidents
+        - link "Devices" [ref=e39] [cursor=pointer]:
+          - /url: /devices
+          - img [ref=e40]
+          - text: Devices
+        - link "AI Copilot" [ref=e43] [cursor=pointer]:
+          - /url: /copilot
+          - img [ref=e44]
+          - text: AI Copilot
+      - link "System Settings" [ref=e48] [cursor=pointer]:
+        - /url: /settings
+        - img [ref=e49]
+        - text: System Settings
+      - button [ref=e52]:
+        - img [ref=e53]
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - button [ref=e58]:
+            - img [ref=e59]
+          - generic [ref=e60]:
+            - img [ref=e61]
+            - textbox "Search..." [ref=e64]
+        - generic [ref=e65]:
+          - generic [ref=e66]: US-EAST
+          - button [ref=e69]:
+            - img [ref=e70]
+          - button [ref=e72]:
+            - img [ref=e73]
+          - button "E" [ref=e78]:
+            - generic [ref=e79]: E
+            - img [ref=e80]
+      - generic [ref=e83]:
+        - generic [ref=e84]:
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - button [ref=e87]:
+                - img [ref=e88]
+              - img [ref=e91]
+              - generic [ref=e93]:
+                - heading "Logs Explorer" [level=1] [ref=e94]
+                - paragraph [ref=e95]: Search and analyze application logs
+            - generic [ref=e96]:
+              - button "Live Tail" [ref=e97]:
+                - img [ref=e98]
+                - text: Live Tail
+              - button [ref=e100]:
+                - img [ref=e101]
+              - button [ref=e104]:
+                - img [ref=e105]
+          - generic [ref=e108]:
+            - generic [ref=e109]:
+              - img [ref=e110]
+              - textbox "Search logs by message, service, or metadata..." [active] [ref=e113]: ERROR
+            - combobox [ref=e114]:
+              - option "Last 15 minutes"
+              - option "Last 1 hour" [selected]
+              - option "Last 6 hours"
+              - option "Last 24 hours"
+              - option "Last 7 days"
+            - button [ref=e115]:
+              - img [ref=e116]
+          - generic [ref=e121]:
+            - generic [ref=e122]: "Levels:"
+            - button "error (6)" [ref=e123]:
+              - img [ref=e124]
+              - generic [ref=e126]: error
+              - generic [ref=e127]: (6)
+            - button "warn (11)" [ref=e128]:
+              - img [ref=e129]
+              - generic [ref=e131]: warn
+              - generic [ref=e132]: (11)
+            - button "info (13)" [ref=e133]:
+              - img [ref=e134]
+              - generic [ref=e136]: info
+              - generic [ref=e137]: (13)
+            - button "debug (11)" [ref=e138]:
+              - img [ref=e139]
+              - generic [ref=e148]: debug
+              - generic [ref=e149]: (11)
+            - button "trace (9)" [ref=e150]:
+              - img [ref=e151]
+              - generic [ref=e153]: trace
+              - generic [ref=e154]: (9)
+            - generic [ref=e155]: "Services:"
+            - button "notification-service" [ref=e156]
+            - button "payment-service" [ref=e157]
+            - button "user-service" [ref=e158]
+            - button "api-gateway" [ref=e159]
+            - generic [ref=e160]: +2 more
+        - generic [ref=e163]:
+          - img [ref=e164]
+          - heading "No logs found" [level=3] [ref=e167]
+          - paragraph [ref=e168]: Try adjusting your search or filters
+        - generic [ref=e170]: Showing 0 of 50 logs
+  - alert [ref=e171]
+```
