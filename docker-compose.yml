@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  ui:
+    build:
+      context: ./ui
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_AI_ENGINE_URL=http://localhost:3002
+      - NEXT_PUBLIC_ALERT_INGESTION_URL=http://localhost:3001
+      - NEXT_PUBLIC_CONFIG_MANAGER_URL=http://localhost:3003
+    depends_on:
+      - ai-engine
+      - alert-ingestion
+      - config-manager
+
+  ai-engine:
+    build:
+      context: ./apps/ai-engine
+      dockerfile: Dockerfile
+    ports:
+      - "3002:3002"
+    environment:
+      - NODE_ENV=production
+      # GEMINI_API_KEY must be provided via environment or .env file
+
+  alert-ingestion:
+    build:
+      context: ./apps/alert-ingestion
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+
+  config-manager:
+    build:
+      context: ./apps/config-manager
+      dockerfile: Dockerfile
+    ports:
+      - "3003:3003"
+    environment:
+      - NODE_ENV=production

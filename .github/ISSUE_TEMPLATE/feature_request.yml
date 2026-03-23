@@ -1,0 +1,34 @@
+name: "✨ Feature Request"
+description: Suggest an idea for this project.
+title: "[Feature] "
+labels: ["enhancement"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for requesting a feature. Before proceeding, please check our Roadmap in the README to see if we're already working on it!
+  - type: textarea
+    id: problem
+    attributes:
+      label: Describe the Problem
+      description: Is your feature request related to a problem? Please describe.
+      placeholder: "I'm always frustrated when [something happens] because..."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like.
+      placeholder: "I would love to have a button that does..."
+    validations:
+      required: true
+  - type: checkboxes
+    id: implementation
+    attributes:
+      label: Implementation Check
+      description: Are you interested in implementing this feature yourself?
+      options:
+        - label: Yes, I would like to submit a PR for this!
+          required: false

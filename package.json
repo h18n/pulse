@@ -1,0 +1,29 @@
+{
+  "name": "pulse-workspace",
+  "private": true,
+  "scripts": {
+    "prepare": "husky",
+    "dev": "concurrently -n \"UI,ALERTS,AI,CONFIG\" -c \"magenta,cyan,blue,yellow\" \"npm run dev:ui\" \"npm run dev:alert-ingestion\" \"npm run dev:ai-engine\" \"npm run dev:config-manager\"",
+    "dev:ui": "npm run dev --prefix ui",
+    "dev:alert-ingestion": "npm run dev --prefix apps/alert-ingestion",
+    "dev:ai-engine": "npm run dev --prefix apps/ai-engine",
+    "dev:config-manager": "npm run dev --prefix apps/config-manager",
+    "infra:up": "docker-compose -f infra/docker-compose.yml up -d",
+    "infra:down": "docker-compose -f infra/docker-compose.yml down",
+    "install:all": "npm install && npm install --prefix ui && npm install --prefix apps/alert-ingestion && npm install --prefix apps/ai-engine && npm install --prefix apps/config-manager"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,yaml,yml}": [
+      "prettier --write"
+    ]
+  }
+}

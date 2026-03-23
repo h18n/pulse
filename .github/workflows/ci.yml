@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [20.x]
+        
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm run install:all || npm install
+      
+    - name: Type Check UI
+      working-directory: ./ui
+      run: npm run type-check
+      
+    - name: Lint UI
+      working-directory: ./ui
+      run: npm run lint
+      
+    - name: Test & Coverage Enforcement (90%+)
+      working-directory: ./ui
+      run: npm run test:coverage
+      
+    - name: Build All
+      run: |
+        npm run build --workspaces --if-present
+        cd ui && npm run build
+        
+    - name: Install Playwright Browsers
+      working-directory: ./ui
+      run: npx playwright install --with-deps
+      
+    - name: Functional Tests (E2E)
+      working-directory: ./ui
+      run: npm run test:e2e
