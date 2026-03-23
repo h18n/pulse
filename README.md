@@ -47,6 +47,7 @@
 
 ---
 
+<a name="features"></a>
 ## ✨ Features
 
 ### 📊 Unified Dashboards
@@ -86,6 +87,7 @@
 
 ---
 
+<a name="quick-start"></a>
 ## 🏁 Quick Start
 
 > For a comprehensive setup guide, see **[Getting Started](docs/GETTING_STARTED.md)**.
@@ -195,6 +197,7 @@ pulse/
 
 ---
 
+<a name="architecture"></a>
 ## 🏗️ Architecture
 
 ```
