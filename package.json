@@ -13,7 +13,7 @@
     "install:all": "npm install && npm install --prefix ui && npm install --prefix apps/alert-ingestion && npm install --prefix apps/ai-engine && npm install --prefix apps/config-manager"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2",
+    "concurrently": "^9.2.1",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.0"
   },
