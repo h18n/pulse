@@ -21,9 +21,12 @@ test.describe('Dashboard Management Flow', () => {
                 await route.fulfill({
                     status: 200,
                     contentType: 'application/json',
-                    body: JSON.stringify([
-                        { id: 'dash-1', title: 'System Overview', tags: ['prod'], updatedAt: new Date().toISOString() },
-                    ]),
+                    body: JSON.stringify({
+                        dashboards: [
+                            { id: 'dash-1', title: 'System Overview', tags: ['prod'], updatedAt: new Date().toISOString() },
+                        ],
+                        folders: []
+                    }),
                 });
             } else if (route.request().method() === 'POST') {
                 await route.fulfill({

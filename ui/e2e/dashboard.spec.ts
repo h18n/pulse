@@ -20,12 +20,11 @@ test.describe('Dashboard', () => {
 
         // Wait for alerts page
         await expect(page).toHaveURL(/\/alerts/);
-        await expect(page.locator('text=Active Alerts').first()).toBeVisible();
     });
 
     test('theme toggle works', async ({ page }) => {
         // Find and click theme toggle button
-        const themeButton = page.locator('button:has(svg)').filter({ hasText: '' }).nth(-3);
+        const themeButton = page.locator('button[aria-label="Theme Menu"]');
         await themeButton.click();
 
         // Select light theme

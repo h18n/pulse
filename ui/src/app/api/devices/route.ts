@@ -1,10 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
-import { auth } from "@/lib/auth";
+import { getAuthSession } from "@/lib/auth";
 
 const CONFIG_MANAGER_URL = process.env.CONFIG_MANAGER_URL || "http://localhost:3003";
 
 export async function GET(req: NextRequest) {
-    const session = await auth();
+    const session = await getAuthSession();
 
     if (!session) {
         return NextResponse.json({ error: "Unauthorized" }, { status: 401 });

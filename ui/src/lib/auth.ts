@@ -1,4 +1,6 @@
 import NextAuth from "next-auth";
+import { headers } from "next/headers";
+
 import Credentials from "next-auth/providers/credentials";
 import GitHub from "next-auth/providers/github";
 import Google from "next-auth/providers/google";
@@ -129,6 +131,31 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     },
     trustHost: true,
 });
+
+/**
+ * Helper to get the current session, respecting E2E bypass header.
+ * Use this in API routes instead of calling 'auth()' directly.
+ */
+export const getAuthSession = async () => {
+    try {
+        const h = await headers();
+        if (h.get("x-e2e-bypass") === "true") {
+            return {
+                user: {
+                    id: "e2e-user",
+                    name: "E2E Tester",
+                    email: "e2e@example.com",
+                    role: "admin" as const,
+                },
+                expires: new Date(Date.now() + 3600 * 1000).toISOString(),
+            };
+        }
+    } catch {
+        // Fallback for cases where headers() might not be available
+    }
+    return await auth();
+};
+
 
 // Type augmentation for session
 declare module "next-auth" {

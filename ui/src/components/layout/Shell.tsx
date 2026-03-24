@@ -178,6 +178,7 @@ export default function Shell({ children }: { children: React.ReactNode }) {
                 {/* Collapse Button - Desktop only */}
                 <button
                     onClick={toggleSidebar}
+                    aria-label="Toggle Sidebar"
                     className="hidden md:flex items-center justify-center p-2 m-2 hover:bg-muted rounded-lg transition-colors text-muted-foreground hover:text-foreground"
                 >
                     <ChevronLeft size={18} className={cn("transition-transform", !isSidebarOpen && "rotate-180")} />
@@ -225,6 +226,7 @@ export default function Shell({ children }: { children: React.ReactNode }) {
                         <div className="relative" ref={themeMenuRef}>
                             <button
                                 onClick={() => setIsThemeMenuOpen(!isThemeMenuOpen)}
+                                aria-label="Theme Menu"
                                 className="p-2 hover:bg-muted rounded-lg transition-colors"
                             >
                                 {themeIcon}

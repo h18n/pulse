@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { auth } from "@/lib/auth";
+import { getAuthSession } from "@/lib/auth";
 import type { DashboardListItem, Folder } from "@/types/dashboard";
 
 // In-memory storage (replace with database in production)
@@ -160,7 +160,7 @@ const userMap: Record<string, string> = {
 export async function GET(req: NextRequest) {
     initDashboards();
 
-    const session = await auth();
+    const session = await getAuthSession();
 
     if (!session) {
         return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -198,7 +198,7 @@ export async function GET(req: NextRequest) {
 export async function POST(req: NextRequest) {
     initDashboards();
 
-    const session = await auth();
+    const session = await getAuthSession();
 
     if (!session) {
         return NextResponse.json({ error: "Unauthorized" }, { status: 401 });

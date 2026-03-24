@@ -1,10 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
-import { auth } from "@/lib/auth";
+import { getAuthSession } from "@/lib/auth";
 import { getDataSource, getDefaultDataSource, DataQueryRequest } from "@/lib/datasources";
 
 // POST /api/query - Execute data source query
 export async function POST(req: NextRequest) {
-    const session = await auth();
+    const session = await getAuthSession();
 
     if (!session) {
         return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -79,7 +79,7 @@ export async function POST(req: NextRequest) {
 
 // GET /api/query/test - Test data source connection
 export async function GET(req: NextRequest) {
-    const session = await auth();
+    const session = await getAuthSession();
 
     if (!session) {
         return NextResponse.json({ error: "Unauthorized" }, { status: 401 });

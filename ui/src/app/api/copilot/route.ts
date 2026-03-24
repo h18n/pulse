@@ -1,10 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
-import { auth } from "@/lib/auth";
+import { getAuthSession } from "@/lib/auth";
 
 const AI_ENGINE_URL = process.env.AI_ENGINE_URL || "http://localhost:3002";
 
 export async function POST(req: NextRequest) {
-    const session = await auth();
+    const session = await getAuthSession();
 
     if (!session) {
         return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
