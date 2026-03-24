@@ -48,21 +48,29 @@ test.describe('Dashboard', () => {
 });
 
 test.describe('Command Palette', () => {
-    test('opens with Cmd+K shortcut', async ({ page }) => {
+    test('opens with Cmd+K shortcut', async ({ page, browserName }) => {
         await page.goto('/');
 
-        // Press Cmd+K
-        await page.keyboard.press('Meta+k');
+        // Determine modifier key
+        const modifier = browserName === 'webkit' || process.platform === 'darwin' ? 'Meta' : 'Control';
 
-        // Command palette should be visible
-        await expect(page.locator('text=Type a command or search')).toBeVisible();
+        // Wait for hydration and retry keypress
+        await expect(async () => {
+            await page.keyboard.press(`${modifier}+k`);
+            await expect(page.locator('input[placeholder="Type a command or search..."]')).toBeVisible({ timeout: 1000 });
+        }).toPass({ timeout: 10000 });
     });
 
-    test('can search and navigate to page', async ({ page }) => {
+    test('can search and navigate to page', async ({ page, browserName }) => {
         await page.goto('/');
 
-        // Open command palette
-        await page.keyboard.press('Meta+k');
+        const modifier = browserName === 'webkit' || process.platform === 'darwin' ? 'Meta' : 'Control';
+
+        // Open command palette with retry
+        await expect(async () => {
+            await page.keyboard.press(`${modifier}+k`);
+            await expect(page.locator('input[placeholder="Type a command or search..."]')).toBeVisible({ timeout: 1000 });
+        }).toPass({ timeout: 10000 });
 
         // Type search
         await page.fill('input[placeholder="Type a command or search..."]', 'logs');
@@ -77,17 +85,21 @@ test.describe('Command Palette', () => {
         await expect(page).toHaveURL(/\/explore\/logs/);
     });
 
-    test('closes with Escape', async ({ page }) => {
+    test('closes with Escape', async ({ page, browserName }) => {
         await page.goto('/');
 
-        // Open command palette
-        await page.keyboard.press('Meta+k');
-        await expect(page.locator('text=Type a command or search')).toBeVisible();
+        const modifier = browserName === 'webkit' || process.platform === 'darwin' ? 'Meta' : 'Control';
+
+        // Open command palette with retry
+        await expect(async () => {
+            await page.keyboard.press(`${modifier}+k`);
+            await expect(page.locator('input[placeholder="Type a command or search..."]')).toBeVisible({ timeout: 1000 });
+        }).toPass({ timeout: 10000 });
 
         // Press Escape
         await page.keyboard.press('Escape');
 
         // Should be closed
-        await expect(page.locator('text=Type a command or search')).not.toBeVisible();
+        await expect(page.locator('input[placeholder="Type a command or search..."]')).not.toBeVisible();
     });
 });
