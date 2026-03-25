@@ -269,6 +269,7 @@ export default function MetricsExplorerPage() {
                         <select
                             value={timeRange}
                             onChange={(e) => setTimeRange(e.target.value)}
+                            data-testid="metrics-time-range"
                             className="bg-muted border border-border rounded-lg px-3 py-2 text-sm focus:ring-2 ring-primary focus:outline-none"
                         >
                             <option value="15m">Last 15 minutes</option>
@@ -281,6 +282,7 @@ export default function MetricsExplorerPage() {
                         <select
                             value={refreshInterval}
                             onChange={(e) => setRefreshInterval(e.target.value)}
+                            data-testid="metrics-refresh-interval"
                             className="bg-muted border border-border rounded-lg px-3 py-2 text-sm focus:ring-2 ring-primary focus:outline-none"
                         >
                             <option value="off">Auto-refresh: Off</option>

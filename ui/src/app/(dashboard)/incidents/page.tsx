@@ -313,6 +313,7 @@ function IncidentRow({ incident, isSelected, onClick }: IncidentRowProps) {
     return (
         <div
             onClick={onClick}
+            data-testid="incident-row"
             className={cn(
                 "flex items-center gap-4 px-6 py-4 hover:bg-muted/50 cursor-pointer transition-colors",
                 isSelected && "bg-primary/5 border-l-2 border-l-primary"
@@ -332,7 +333,7 @@ function IncidentRow({ incident, isSelected, onClick }: IncidentRowProps) {
                         {status.label}
                     </span>
                 </div>
-                <h3 className="font-medium truncate mb-1">{incident.title}</h3>
+                <h3 className="font-medium truncate mb-1" data-testid="incident-title">{incident.title}</h3>
                 <div className="flex items-center gap-4 text-xs text-muted-foreground">
                     <span className="flex items-center gap-1">
                         <Activity size={12} />

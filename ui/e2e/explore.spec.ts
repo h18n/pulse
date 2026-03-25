@@ -10,25 +10,20 @@ test.describe('Logs Explorer', () => {
     });
 
     test('has search input', async ({ page }) => {
-        const searchInput = page.locator('input[placeholder*="Search"]');
+        const searchInput = page.getByTestId('explore-search-input');
         await expect(searchInput).toBeVisible();
     });
 
     test('has log level filters', async ({ page }) => {
         // Check for log level filter buttons
-        await expect(page.locator('text=ERROR').first()).toBeVisible();
-        await expect(page.locator('text=WARN').first()).toBeVisible();
-        await expect(page.locator('text=INFO').first()).toBeVisible();
+        await expect(page.locator('button:has-text("ERROR")').first()).toBeVisible();
+        await expect(page.locator('button:has-text("WARN")').first()).toBeVisible();
+        await expect(page.locator('button:has-text("INFO")').first()).toBeVisible();
     });
 
     test('displays log entries', async ({ page }) => {
-        // Wait for logs to load
-        await page.waitForTimeout(1000);
-
-        // Should have log entries in the list
-        const logEntries = page.locator('[data-testid="log-entry"]');
-        // Check if any log content is visible
-        await expect(page.locator('text=service').first()).toBeVisible();
+        // Wait for logs to load or UI to be ready
+        await expect(page.locator('text=service').first()).toBeVisible({ timeout: 10000 });
     });
 });
 
@@ -38,18 +33,20 @@ test.describe('Metrics Explorer', () => {
     });
 
     test('displays metrics explorer page', async ({ page }) => {
-        await expect(page.locator('text=Metrics Explorer')).toBeVisible();
+        await expect(page.locator('h1')).toContainText('Metrics Explorer');
     });
 
     test('has query input', async ({ page }) => {
         // Should have a query input area
-        const queryInput = page.locator('textarea, input').first();
+        const queryInput = page.getByPlaceholder('Enter PromQL expression...');
         await expect(queryInput).toBeVisible();
     });
 
     test('has time range selector', async ({ page }) => {
-        // Check for time range dropdown
-        await expect(page.locator('text=Last 1 hour').or(page.locator('text=1h'))).toBeVisible();
+        // Use data-testid for the select
+        const select = page.getByTestId('metrics-time-range');
+        await expect(select).toBeVisible();
+        await expect(select).toHaveValue('1h');
     });
 
     test('execute button is present', async ({ page }) => {

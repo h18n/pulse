@@ -253,6 +253,7 @@ export default function LogsExplorerPage() {
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
                             placeholder="Search logs by message, service, or metadata..."
+                            data-testid="explore-search-input"
                             className="w-full bg-muted border border-border rounded-lg pl-9 pr-4 py-2 text-sm focus:ring-2 ring-primary focus:outline-none"
                         />
                     </div>

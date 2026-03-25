@@ -35,11 +35,11 @@ test.describe('Alert Management Flow', () => {
         await alertHeading.click();
 
         // 5. Verify sidebar details
-        const sidebar = page.locator('h2:has-text("Alert Details")').locator('..').locator('..');
+        const sidebar = page.locator('div.border-l').first();
         await expect(sidebar).toBeVisible();
 
         // Use nth(1) if necessary or just a more specific locator for sidebar heading
-        await expect(sidebar.getByRole('heading', { name: 'HighCPUUsage' })).toBeVisible();
+        await expect(sidebar.locator('h3')).toContainText('HighCPUUsage');
         await expect(sidebar.locator('text=Current value: 94.5%')).toBeVisible();
 
         // 6. Test Filtering by Severity
@@ -47,18 +47,18 @@ test.describe('Alert Management Flow', () => {
         await page.click('button:has-text("Critical")');
 
         // Verify critical alerts show up
-        await expect(page.getByRole('heading', { name: 'HighCPUUsage' }).first()).toBeVisible();
-        await expect(page.getByText('HighMemoryUsage')).not.toBeVisible();
+        await expect(page.locator('h3:has-text("HighCPUUsage")').first()).toBeVisible();
+        await expect(page.locator('h3:has-text("HighMemoryUsage")')).not.toBeVisible();
 
         // 7. Close sidebar
-        await page.getByRole('button', { name: 'Close details' }).click();
-        await expect(page.locator('h2:has-text("Alert Details")')).not.toBeVisible();
+        await sidebar.getByLabel('Close details').click();
+        await expect(sidebar).not.toBeVisible();
     });
 
     test('should handle "No alerts found" state', async ({ page }) => {
         const searchInput = page.getByPlaceholder('Search alerts by name, summary, or labels...');
         await searchInput.fill('NonExistentAlert123');
 
-        await expect(page.getByRole('heading', { name: 'No alerts found' })).toBeVisible();
+        await expect(page.locator('h3:has-text("No alerts found")')).toBeVisible();
     });
 });
