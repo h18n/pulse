@@ -36,6 +36,16 @@ const EXPLORE_OPTIONS = [
         features: ['PromQL builder', 'Multi-query', 'Saved queries', 'Chart/Table views'],
     },
     {
+        id: 'detective',
+        title: 'Detective',
+        description: 'ML-powered log clustering and anomaly detection using Isolation Forest algorithms.',
+        icon: Search,
+        color: 'text-cyan-500',
+        bg: 'bg-cyan-500/10',
+        href: '/explore/detective',
+        features: ['Pattern clustering', 'Anomaly scoring', 'Deployment diffs', 'Isolation Forest'],
+    },
+    {
         id: 'traces',
         title: 'Traces Explorer',
         description: 'Trace distributed requests across microservices to identify bottlenecks and errors.',

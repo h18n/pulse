@@ -38,6 +38,7 @@ const NAV_ITEMS = [
             { href: '/explore', label: 'Overview' },
             { href: '/explore/logs', label: 'Logs' },
             { href: '/explore/metrics', label: 'Metrics' },
+            { href: '/explore/detective', label: 'Detective' },
         ]
     },
     {
