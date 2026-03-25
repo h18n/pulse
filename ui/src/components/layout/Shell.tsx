@@ -45,6 +45,7 @@ const NAV_ITEMS = [
             { href: '/alerts', label: 'Active Alerts' },
             { href: '/alerts/rules', label: 'Alert Rules' },
             { href: '/alerts/channels', label: 'Notification Channels' },
+            { href: '/alerts/intelligence', label: 'Alert Intelligence' },
         ]
     },
     { href: '/slos', icon: Target, label: 'SLOs' },
