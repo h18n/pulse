@@ -25,7 +25,8 @@ import {
     X,
     Flame,
     Activity,
-    Circle
+    Circle,
+    Target
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useTheme } from '@/components/providers/ThemeProvider';
@@ -46,6 +47,7 @@ const NAV_ITEMS = [
             { href: '/alerts/channels', label: 'Notification Channels' },
         ]
     },
+    { href: '/slos', icon: Target, label: 'SLOs' },
     { href: '/incidents', icon: Flame, label: 'Incidents' },
     { href: '/devices', icon: Server, label: 'Devices' },
     { href: '/copilot', icon: Bot, label: 'AI Copilot' },
